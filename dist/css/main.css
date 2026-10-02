@@ -402,10 +402,10 @@ section {
   width: 100%;
 }
 .intro .content {
-  background: url("../../assets/images/bg/bg2.png") no-repeat 50% 100%/95%;
+  background: url("../../assets/images/bg/bg1.png") no-repeat 50% 100%/95%;
   width: 100%;
   max-width: 500px;
-  aspect-ratio: 500/2110;
+  aspect-ratio: 500/1990;
   position: relative;
   box-sizing: border-box;
   display: flex;
@@ -912,6 +912,15 @@ section {
 .our-story {
   width: 100%;
   margin-bottom: 6%;
+  position: relative;
+}
+.our-story .animal-img {
+  position: absolute;
+  bottom: -50px;
+  right: 10px;
+  max-width: 200px;
+  width: 100%;
+  height: auto;
 }
 .our-story .divider {
   text-align: center;
@@ -1010,6 +1019,11 @@ section {
 @media (max-width: 500px) {
   .our-story .divider .divider-icon {
     max-width: 30.2vw;
+  }
+  .our-story .animal-img {
+    bottom: -50px;
+    right: 10px;
+    max-width: 40vw;
   }
   .our-story .items .item p.time,
   .our-story .items .item h3.title {

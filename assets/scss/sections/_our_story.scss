@@ -4,6 +4,16 @@
 .our-story {
     width: 100%;
     margin-bottom: 6%;
+    position: relative;
+
+    .animal-img {
+        position: absolute;
+        bottom: -50px;
+        right: 10px;
+        max-width: 200px;
+        width: 100%;
+        height: auto;
+    }
 
     .divider {
         text-align: center;
@@ -132,6 +142,12 @@
             .divider-icon {
                 max-width: calc((151 / 500) * 100vw);
             }
+        }
+
+        .animal-img {
+            bottom: -50px;
+            right: 10px;
+            max-width: calc((200 / 500) * 100vw);
         }
 
         .items {
