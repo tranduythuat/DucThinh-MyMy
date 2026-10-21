@@ -917,7 +917,7 @@ section {
 .our-story .animal-img {
   position: absolute;
   bottom: -50px;
-  right: 10px;
+  left: 5%;
   max-width: 200px;
   width: 100%;
   height: auto;
@@ -948,17 +948,26 @@ section {
 }
 .our-story .items .item img.overlay {
   position: absolute;
+  max-width: 152px;
+  width: 100%;
+  height: auto;
+  top: 0;
+  left: 0;
 }
 .our-story .items .item .column {
   position: relative;
   flex: 1;
-  padding: 0 7% 5% 5%;
+  padding: 0 7% 8% 5%;
   text-align: left;
 }
 .our-story .items .item .column .description {
   display: block;
   width: 100%;
   aspect-ratio: 10/5;
+}
+.our-story .items .item .column:first-child {
+  text-align: right;
+  border-right: solid 2px #806331;
 }
 .our-story .items .item .column:first-child:after {
   content: "";
@@ -973,47 +982,26 @@ section {
   top: 0;
   transform: translateX(55%);
 }
-.our-story .items .item-2022 p.time {
-  text-align: right;
-}
-.our-story .items .item-2022 img.overlay {
-  max-width: 152px;
-  width: 100%;
-  height: auto;
+.our-story .items .item:nth-child(even) img.overlay {
   top: 0;
-  left: 0;
-}
-.our-story .items .item-2022 .column:first-child {
-  border-right: solid 2px #806331;
-}
-.our-story .items .item-2023 h3.title {
-  text-align: right;
-}
-.our-story .items .item-2023 img.overlay {
-  max-width: 152px;
-  width: 100%;
-  height: auto;
-  top: 21%;
+  left: unset;
   right: 0;
 }
-.our-story .items .item-2023 .column:first-child {
-  border-right: solid 2px #806331;
-  text-align: right;
+.our-story .items .item:nth-child(even) {
+  flex-direction: row-reverse;
 }
-.our-story .items .item-2025 p.time {
-  text-align: right;
-}
-.our-story .items .item-2025 img.overlay {
-  max-width: 172px;
-  width: 100%;
-  height: auto;
-  top: 8%;
+.our-story .items .item:nth-child(even) .column:first-child:after {
+  transform: translateX(-57%);
   left: 0;
 }
-.our-story .items .item-2025 .column {
-  padding: 0 6%;
+.our-story .items .item:nth-child(even) .column:first-child {
+  border-right: unset;
 }
-.our-story .items .item-2025 .column:first-child {
+.our-story .items .item:nth-child(even) .column:first-child .time {
+  text-align: left;
+}
+.our-story .items .item:nth-child(even) .column:last-child {
+  text-align: right;
   border-right: solid 2px #806331;
 }
 @media (max-width: 500px) {
@@ -1035,7 +1023,7 @@ section {
   .our-story .items .item .column:first-child:after {
     max-width: 3vw;
   }
-  .our-story .items .item-2022 img.overlay {
+  .our-story .items .item-2021 img.overlay {
     max-width: 30.4vw;
   }
   .our-story .items .item-2023 img.overlay {
