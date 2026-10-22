@@ -11,7 +11,7 @@
         justify-content: center;
         text-align: center;
         margin-top: 10%;
-        aspect-ratio: 500 / 754;
+        aspect-ratio: 500 / 780;
         position: relative;
         overflow: hidden;
         color: white;
@@ -22,10 +22,10 @@
             position: absolute;
             inset: 0;
             background-color: $primary-color;
-            // background: linear-gradient(to bottom,
-            //         rgba(0, 0, 0, 0.17),
-            //         rgba(0, 0, 0, 0.3)),
-            //     url('') no-repeat center/cover;
+            background: linear-gradient(to bottom,
+                    rgba(0, 0, 0, 0.17),
+                    rgba(0, 0, 0, 0.3)),
+                url('../../assets/images/end_bg.webp') no-repeat center/cover;
             filter: blur(4px);
             z-index: 0;
             transform: scale(1.1);
