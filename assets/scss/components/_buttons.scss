@@ -9,11 +9,11 @@
     @include transition(background-color);
 
     &--primary {
-        background: variables.$primary-color;
+        // background: variables.$primary-color;
         color: white;
 
         &:hover {
-            background: variables.$primary-color;
+            // background: variables.$primary-color;
         }
     }
 }
