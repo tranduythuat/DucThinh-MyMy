@@ -17,7 +17,7 @@
         .title {
             font-family: $font-hero;
             font-size: 44px;
-            padding-bottom: 15%;
+            padding-bottom: 5%;
             font-weight: 300;
         }
 
@@ -47,6 +47,14 @@
                         }
                     }
                 }
+            }
+        }
+
+        .dresscode-box {
+            margin-top: 5%;
+
+            .title {
+                padding-bottom: 2%;
             }
         }
     }
