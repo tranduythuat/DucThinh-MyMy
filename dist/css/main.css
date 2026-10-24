@@ -876,7 +876,6 @@ section {
 }
 .couple-photo .content {
   width: 100%;
-  min-height: 390px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -898,7 +897,7 @@ section {
 }
 .couple-photo .content .container-photo .overlay {
   position: absolute;
-  bottom: 60px;
+  bottom: 15%;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -910,6 +909,9 @@ section {
   .couple-photo .content .container-photo {
     max-width: 59.4vw;
   }
+  .couple-photo .content .container-photo .overlay img {
+    width: 23.2vw;
+  }
 }
 
 .our-story {
@@ -919,7 +921,7 @@ section {
 }
 .our-story .animal-img {
   position: absolute;
-  bottom: -50px;
+  bottom: -5%;
   left: 5%;
   max-width: 200px;
   width: 100%;
@@ -985,13 +987,13 @@ section {
   top: 0;
   transform: translateX(55%);
 }
+.our-story .items .item:nth-child(even) {
+  flex-direction: row-reverse;
+}
 .our-story .items .item:nth-child(even) img.overlay {
   top: 0;
   left: unset;
   right: 0;
-}
-.our-story .items .item:nth-child(even) {
-  flex-direction: row-reverse;
 }
 .our-story .items .item:nth-child(even) .column:first-child:after {
   transform: translateX(-57%);
@@ -1012,28 +1014,24 @@ section {
     max-width: 30.2vw;
   }
   .our-story .animal-img {
-    bottom: -50px;
-    right: 10px;
     max-width: 40vw;
   }
   .our-story .items .item p.time,
   .our-story .items .item h3.title {
     font-size: 2.8vw;
   }
-  .our-story .items .item .description {
-    letter-spacing: 0.14vw;
+  .our-story .items .item img.overlay {
+    max-width: 30.4vw;
+  }
+  .our-story .items .item .column:first-child {
+    border-right: solid 0.4vw #806331;
   }
   .our-story .items .item .column:first-child:after {
     max-width: 3vw;
   }
-  .our-story .items .item-2021 img.overlay {
-    max-width: 30.4vw;
-  }
-  .our-story .items .item-2023 img.overlay {
-    max-width: 30.4vw;
-  }
-  .our-story .items .item-2025 img.overlay {
-    max-width: 34.4vw;
+  .our-story .items .item:nth-child(even) .column:last-child {
+    text-align: right;
+    border-right: solid 0.4vw #806331;
   }
 }
 

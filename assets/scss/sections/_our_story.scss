@@ -8,7 +8,7 @@
 
     .animal-img {
         position: absolute;
-        bottom: -50px;
+        bottom: -5%;
         left: 5%;
         max-width: 200px;
         width: 100%;
@@ -89,13 +89,14 @@
 
             &:nth-child(even) {
 
+                flex-direction: row-reverse;
+
                 img.overlay {
                     top: 0;
                     left: unset;
                     right: 0;
                 }
 
-                flex-direction: row-reverse;
 
                 .column:first-child:after {
                     transform: translateX(-57%);
@@ -116,85 +117,6 @@
                 }
             }
         }
-
-
-
-        // .item-2021 {
-        //     p.time {
-        //         text-align: right;
-        //     }
-
-        //     img.overlay {
-        //         max-width: 152px;
-        //         width: 100%;
-        //         height: auto;
-        //         top: 0;
-        //         left: 0;
-        //     }
-
-        //     .column:first-child {
-        //         border-right: solid 2px $primary-color;
-        //     }
-        // }
-
-        // .item-2022 {
-        //     p.time {
-        //         text-align: right;
-        //     }
-
-        //     img.overlay {
-        //         max-width: 152px;
-        //         width: 100%;
-        //         height: auto;
-        //         top: 0;
-        //         left: 0;
-        //     }
-
-        //     .column:first-child {
-        //         border-right: solid 2px $primary-color;
-        //     }
-        // }
-
-        // .item-2023 {
-        //     h3.title {
-        //         text-align: right;
-        //     }
-
-        //     img.overlay {
-        //         max-width: 152px;
-        //         width: 100%;
-        //         height: auto;
-        //         top: 21%;
-        //         right: 0;
-        //     }
-
-        //     .column:first-child {
-        //         border-right: solid 2px $primary-color;
-        //         text-align: right;
-        //     }
-        // }
-
-        // .item-2025 {
-        //     p.time {
-        //         text-align: right;
-        //     }
-
-        //     img.overlay {
-        //         max-width: 172px;
-        //         width: 100%;
-        //         height: auto;
-        //         top: 8%;
-        //         left: 0;
-        //     }
-
-        //     .column {
-        //         padding: 0 6%;
-        //     }
-
-        //     .column:first-child {
-        //         border-right: solid 2px $primary-color;
-        //     }
-        // }
     }
 
     @media (max-width: 500px) {
@@ -205,8 +127,6 @@
         }
 
         .animal-img {
-            bottom: -50px;
-            right: 10px;
             max-width: calc((200 / 500) * 100vw);
         }
 
@@ -218,30 +138,24 @@
                     font-size: calc((14 / 500) * 100vw);
                 }
 
-                .description {
-                    letter-spacing: calc((.7 / 500) * 100vw);
+                img.overlay {
+                    max-width: calc((152 / 500) * 100vw);
+                }
+
+                .column:first-child {
+                    border-right: solid calc((2 / 500) * 100vw) $primary-color;
                 }
 
                 .column:first-child:after {
                     max-width: calc((15 / 500) * 100vw);
                 }
-            }
 
-            .item-2021 {
-                img.overlay {
-                    max-width: calc((152 / 500) * 100vw);
-                }
-            }
+                &:nth-child(even) {
 
-            .item-2023 {
-                img.overlay {
-                    max-width: calc((152 / 500) * 100vw);
-                }
-            }
-
-            .item-2025 {
-                img.overlay {
-                    max-width: calc((172 / 500) * 100vw);
+                    .column:last-child {
+                        text-align: right;
+                        border-right: solid calc((2 / 500) * 100vw) $primary-color;
+                    }
                 }
             }
         }
