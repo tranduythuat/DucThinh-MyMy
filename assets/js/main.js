@@ -627,7 +627,7 @@
     // if (timeline === "v2") {
     //   sheetURL = SHEET_ENDPOINTS.not_vow
     // }
-    const sheetURL = '/exec?sheet=confirm';
+    const sheetURL = 'https://script.google.com/macros/s/AKfycbwAOTn6HwVKcQG7NLias3MYdJMwBYFh68Zr6hs_p5UPCTcxJEW_wqpJrkt7pQmxMB4S/exec?sheet=confirm';
 
     try {
       const res = await fetch(sheetURL, {
